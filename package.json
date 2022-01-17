@@ -7,7 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win",
+    "dist:mac": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "com.swiun.my-electron-app"
   },
   "author": "swiun",
   "license": "ISC",
@@ -17,7 +23,8 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.60",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.60",
     "@electron-forge/maker-zip": "^6.0.0-beta.60",
-    "electron": "^14.0.0"
+    "electron": "^14.0.0",
+    "electron-builder": "^22.14.5"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
